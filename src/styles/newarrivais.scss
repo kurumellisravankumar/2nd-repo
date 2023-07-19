@@ -1,0 +1,114 @@
+@import "../App.scss";
+
+.new-arrivals {
+    width: 100%;
+    margin: 5rem auto;
+    height: fit-content;
+
+    // background: #000;
+    h1 {
+        text-align: center;
+        margin: 5rem auto;
+
+        &::after {
+            content: "ARRIVALS";
+            width: 1rem;
+            color: #9b3939;
+            // padding-left: 5rem;
+            border-bottom: 3px solid #9b3939;
+        }
+    }
+
+    .arrivals {
+        width: 99%;
+        // height: 80vh;
+        // background: red;
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+        .arrivalsswiper {
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 5rem;
+            width: 95%;
+
+            .arrivals-books {
+                position: relative;
+                width: 19vmax;
+                margin: 1vmax auto;
+                background:#a98989;
+
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.5s;
+
+                &:hover {
+                    background: #9b393944;
+                    transform: scale(1.1);
+                }
+
+                .book-info {
+        opacity: 0.9;
+                    display: none;
+                    height: 50%;
+                }
+
+                &:hover .book-info {
+                    position: absolute;
+                    width: 99%;
+                    margin: 0 auto;
+                    bottom: 0;
+
+                    // margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+             
+                    
+
+                    p {
+                        color: #fff;
+                        font:500  1vmax $text1;
+                      margin-left: 5px;
+                    }
+
+                    animation: arrivals 1s ease-in-out alternate forwards;
+
+                }
+
+                img {
+                    padding: 2.5rem;
+                    margin: 0 auto;
+                    width: 20vmax;
+                    // height: 25vmax;
+                }
+
+            }
+        }
+    }
+}
+
+
+@keyframes arrivals {
+    0% {
+     
+        transform: translatex(-500px);
+    }
+
+    50% {
+        
+       
+    }
+
+    100% {
+    
+        background: linear-gradient(to top, #b89595, #82ce9f, #1f64a5);
+        background: #9b3939;
+        transform: translatex(0x);
+
+        
+     
+    }
+}
