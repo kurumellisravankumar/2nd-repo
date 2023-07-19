@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+// ---------------------------------------------------
+//   components---------------------------------------------------
+import Header from "./components/Header";
+import Home from "./components/Home";
+import NewArrivals from "./components/NewArrivals";
+import Booksbar from "./components/Booksbar";
+import Footer from "./components/Footer";
+ import   Contactus  from "./components/Contactus"
+
+
+
+
+
+
+
+
+// ---------------------------------------------------
+//  styles ---------------------------------------------------
+
+import "./styles/header.scss";
+import "./styles/home.scss";
+import "./styles/home.scss";
+import "./styles/newarrivais.scss";
+import "./styles/bookbar.scss";
+import "./styles/footer.scss";
+import "./styles/contactus.scss";
+
+
+
+import "./styles/mediaquerry.scss";
+
+
+
+import "./App.scss";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Home />
+      <NewArrivals />
+      <Booksbar />
+      {/* <Contactus />/ */}
+      <Footer />
+    </>
   );
+  
 }
 
 export default App;

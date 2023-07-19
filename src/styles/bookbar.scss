@@ -1,0 +1,120 @@
+@import "../App.scss";
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    margin: 3rem auto;
+    background: #fff;
+
+.book-bar-container{
+    background: #225171;
+    width: 20vmax;
+    border: 1px solid rgb(0, 0, 0);
+        // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+// text-align: justify;
+.dorp-down{
+    margin: 1rem 2rem;
+    .ugdorp-down{
+        margin-left: 1rem;
+    }
+     
+    .boook-list{
+        color: rgb(255, 255, 255);
+        font: 500 1.8vmax $text1 ;
+        a{
+            color:#ffffff;
+            text-decoration: solid;
+            &:hover{
+                border-bottom: 5px solid #b3b2b2;
+
+            }
+        }
+        
+    }
+        p {
+            a {
+                color: #ffffff;
+                &:hover {
+                        border-bottom: 2px solid #ffffff;
+                
+                    }
+            }
+        }
+}
+}
+
+    .books-section {
+        width: 70vw;
+        margin: 1rem auto;
+
+        h1 {
+
+            margin: 2rem auto;
+            width: fit-content;
+
+            border-bottom: 1px solid red;
+        }
+
+        .ugbooks {
+            .ugbook {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+
+                .ug-each-book {
+                    background:#a88888;
+                    position: relative;
+                    width: 13vmax;
+                    height: 18vmax;
+                    margin: 2vmax;
+                    padding: 1vmax;
+                    display: flex;
+                    justify-content: center;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+                    img {
+                        width: 12vmax;
+
+                    }
+
+                    .ug-each-book-info {
+                        display: none;
+                        
+
+                        p {
+                            font: 100 1vmax $text1;
+                                    color: #000;
+                        }
+                 
+                    }
+                    &:hover .ug-each-book-info{
+                        position: absolute;
+                        bottom: 0;
+                        display: block;
+                        padding:1rem;
+                       animation: bookssection 0.8s linear alternate forwards;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+}
+
+@keyframes bookssection {
+    0%{
+        transform: translate(100px);
+
+    }
+    100%{
+        width: 100%;
+        background:#cbe3e5 ;
+        transform: translate(0);
+    }
+    
+}

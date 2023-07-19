@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+    // list-style: none;
+    scroll-behavior: smooth;
+}
+li{
+    list-style-type: none;
+}
+body{
+background: #dbdedd;
+    // background:#6ddbf0;
+    // background: #987878;
+    //     background: radial-gradient(#d7e1e6,#76cff8);
+    // // background: radiial-gradient(#87bd0b,#f9faf9);
+}
+
+
+$bg-color: rgb(0, 0, 0);
+$main: #3f383f;
+$text1: Righteous;
+$text2: Roboto;
+$f-clr: #fff;
+$btn-clr: rgb(244, 255, 250);
+
+h1{
+    font: 500 2.5rem $text1 ;
+    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+h3 {
+    font: 500 2.5vmax $text1 ;
+}
+a{
+    font-family: $text1;
+}
+p{
+    font-family: $text1;
+}
+h6 {
+    font: 500 1.8vmax $text1 ;
+}

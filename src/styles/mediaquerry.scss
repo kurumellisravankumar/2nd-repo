@@ -1,0 +1,125 @@
+// -----------------------------------------------------navbar------------------------------------------------
+@import "../App.scss";
+
+@media (max-width:1080px) {
+    .pulication-nav {
+        height: 3.8rem;
+        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+
+        .logo {
+            height: 2.8rem;
+        }
+
+        .pulication-nav-list {
+
+            ul {
+                height: 3.8rem;
+            }
+
+
+        }
+
+        .publication-contactus {
+            .publication-contactus-desktop {
+                height: 3.8rem;
+
+            }
+
+        }
+    }
+}
+
+@media (max-width:990px) {
+    .pulication-nav {
+        height: 3.8rem;
+        grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+
+        .logo {
+            height: 2.8rem;
+        }
+
+        .pulication-nav-list {
+
+            display: none;
+
+
+        }
+
+        .mobile-menu {
+            // grid-column: 2/4 ;
+            width: 20vmax;
+            // top: 3rem;
+            right: -10vmax;
+            position: absolute;
+            z-index: 99;
+            background: $bg-color;
+            height: 70vh;
+            border-radius: 50px 0 0 50px;
+            display: grid;
+            grid-column: 2/5;
+
+
+
+            padding-left: 1rem;
+            transition: all 1s linear;
+
+            // transform-origin: left;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 18rem;
+
+                li {
+                    margin: 1rem 0;
+
+                    a {
+                        font-size: 1.8vmax;
+                    }
+                }
+            }
+        }
+
+        .publication-contactus {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .publication-contactus-desktop {
+                height: 0;
+                display: none;
+            }
+
+            .menu-icon {
+                position: absolute;
+                top: 1.3rem;
+                display: block;
+                z-index: 100;
+
+                a {
+                    color: #ffffff;
+                    
+                    font-size: 3vmax;
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------navbar end------------------------------------------------
+
+
+
+
+
+
+
+
+// -----------------------------------------------------header------------------------------------------------
+@media (max-width:670px) {
+    .books-container{
+        .book-bar-container{
+            width: 100%;
+        }
+    }
+}
